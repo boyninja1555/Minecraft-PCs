@@ -22,3 +22,5 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./
           server-dir: /Minecraft-PCs/
+
+          
