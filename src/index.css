@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --bg-0: #080808;
+  --text-0: #ffffff;
+  --bg-1: #181818;
+  --text-1: #efefef;
+  --bg-2: #282828;
+  --text-2: #dfdfdf;
+  --outline-border: hsl(200, 100%, 50%);
+}
+
+/* TailwindCSS Classes */
+.bg-0 {
+  background-color: var(--bg-0);
+}
+
+.text-0 {
+  color: var(--text-0);
+}
+
+.bg-1 {
+  background-color: var(--bg-1);
+}
+
+.text-1 {
+  color: var(--text-1);
+}
+
+.bg-2{
+  background-color: var(--bg-2);
+}
+
+.text-2 {
+  color: var(--text-2);
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg-0);
+  color: var(--text-0);
+}
+
+main,
+section {
+  width: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+section {
+  min-height: 100vh;
+}
+
+/* Link */
+a:not(.non-link) {
+  font-style: italic;
+}
+
+a:not(.non-link):hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text-1);
+}
+
+/* Form Text Input */
+input[type=text] {
+  padding: .375em;
+  font-size: .875em;
+  background-color: var(--bg-2);
+  border-radius: .25em;
+  outline: none;
+  color: var(--text-2);
+  width: 14em;
+  transition: width .25s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  input[type=text] {
+    transition: none;
+  }
+}
+
+input[type=text]::placeholder {
+  color: var(--text-2);
+}
+
+input[type=text]:focus-visible {
+  box-shadow: 0 0 0 .25rem var(--outline-border);
+}
+
+input[type=text]:focus,
+input[type=text]:not(:placeholder-shown) {
+  width: 20em;
+}
+
+/* Form Submit Button */
+input[type=submit] {
+  padding: .375em 2em;
+  font-size: .875em;
+  background-color: var(--bg-2);
+  border-radius: .25em;
+  outline: none;
+  color: var(--text-2);
+  cursor: pointer;
+}
+
+input[type=text]::placeholder {
+  color: var(--text-2);
+}
+
+input[type=submit]:focus-visible {
+  box-shadow: 0 0 0 .25rem var(--outline-border);
+}
