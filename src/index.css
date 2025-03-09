@@ -27,7 +27,7 @@
   color: var(--text-1);
 }
 
-.bg-2{
+.bg-2 {
   background-color: var(--bg-2);
 }
 
@@ -35,9 +35,14 @@
   color: var(--text-2);
 }
 
+.border-outline {
+  border-color: var(--outline-border);
+}
+
 /* Base */
 * {
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html,
@@ -57,31 +62,61 @@ main {
 
 section {
   min-height: 100vh;
+  border-bottom: 1.5px solid var(--outline-border);
 }
 
 /* Headings */
-h1 {
-  font-size: 3.5rem;
+h1:not(.custom) {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-h2 {
-  font-size: 3rem;
+h2:not(.custom) {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-h3 {
-  font-size: 2.5rem;
+h3:not(.custom) {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-h4 {
-  font-size: 2rem;
+h4:not(.custom) {
+  display: block;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-h5 {
-  font-size: 1.5rem;
+h5:not(.custom) {
+  display: block;
+  font-size: .83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-h6 {
-  font-size: 1.25rem;
+h6:not(.custom) {
+  display: block;
+  font-size: .67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* Link */

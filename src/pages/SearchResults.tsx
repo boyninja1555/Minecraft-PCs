@@ -6,9 +6,9 @@ export default function SearchResults() {
 
     return (
         <section className="p-[25px]">
-            <h5>
+            <h2>
                 Showing results for <span className="text-blue-500">{query}</span>
-            </h5>
+            </h2>
             <ul>
                 {filteredParts.length > 0 ? (
                     filteredParts.map((part, index) => (
